@@ -1,0 +1,197 @@
+Evolution Cloud:
+- enabling technology evolution
+- OS architecture evolution
+- cloud ecosystem evolution
+
+
+Ejecuta aplicaciones en la nube es diferente a ejecutar aplicaciones en una sola maquina, para cada so de una sola maquina se utulizará un programador de tareas para adminsistrar los procesos en el sistema. pag226
+Amazon y Google, fuerom los pioneros de los SO en la nube, les sigue Microsoft
+
+
+Evlocion de los so 
+Mejorar el rendimiento y la eficiencia de los recursos informaticos utilizados, no desperdidicar nunca la potencia informatica proporcionada. 
+Mejorar las experiencias de usuarios, mejorar las interfaces de programacion 
+
+
+2.1 Evolucion de la tecnologia inducida por MV
+La primera evolucion tecnologica está bastante relacionada con la instroduccion de las maquinas virtuales.
+Al comienzo VM se consideraba como un sinonimo de computacion en la nube.
+Si no hubieran maquinas virtuales, no habria computacion en la nube.
+Las máquinas virtuales son como máquinas físicas, pero ejecutan instrucciones utilizando hardware simulado en lugar de hardware físico.
+Amazon es la 
+primera empresa en brindar servicios de VM al público. Esto es 
+especialmente útil para las empresas emergentes que brindan servicios 
+de Internet.
+
+
+2.2 Evolucion de la mejora del Hardware
+Las formas para mejorar el rendimiento son:
+Utilizar el hardware recien desarrollado 
+Hacer mejoras en el software
+La evolucion del hardware siempre va acompañada de algun software correspondiente.
+Durante la evolución 
+del sistema en la nube, hay muchos avances de hardware principalmente 
+para mejorar el rendimiento.
+
+. Como se mencionó anteriormente, VM 
+introduce grandes cantidades de sobrecarga informática debido al nivel 
+adicional de direccionamiento indirecto. Intel ha realizado grandes 
+esfuerzos para mejorar el rendimiento de la virtualización de hardware, 
+por ejemplo, proporcionando VT-x para virtualización de CPU y 
+virtualización de memoria, y VT-d para virtualización de dispositivos. 
+
+Por el lado del software, el software del sistema tiene que adaptarse 
+a las nuevas características del hardware. Los sistemas operativos 
+heredados se diseñaron para máquinas de un solo núcleo y una sola 
+CPU. Ahora, las máquinas multinúcleo son omnipresentes. El sistema 
+debe adaptarse al cambio para proporcionar una capacidad real de 
+tareas múltiples [55-57] en lugar de tareas múltiples de tiempo 
+compartido. Los sistemas operativos han proporcionado una arquitectura 
+multiproceso para ejecutar tareas simultáneas[58-59] . 
+
+
+
+2.3 Evolución de la escalabilidad del software
+2.4 Evolucion de la programabilidad
+
+
+3 Evolución de la arquitectura del sistema operativo en la nube
+La computación en la nube se puede considerar como un 
+paradigma de computación distribuida completamente comercializado.
+Con el desarrollo de la infraestructura informática, proliferan 
+nuevas aplicaciones de red en la nube. El sistema operativo en la 
+nube y el sistema operativo de un solo nodo tienen la evolución de sus 
+arquitecturas internas para adaptarse a esa tendencia de desarrollo. 
+Las aplicaciones en la nube han puesto a disposición de los 
+programadores más API, enriqueciendo así el ecosistema del sistema 
+operativo en la nube.
+
+Esta 
+redundancia obvia brinda nuevas oportunidades para llevar los 
+contenedores un nivel más bajo en el sistema operativo mediante el 
+uso del micro kernel o kernel personalizado para eliminar el problema del aislamiento del rendimiento [89-91] .
+No es fácil desvincular la política del sistema operativo de un solo nodo 
+monolítico tradicional. SO de nodo único
+La arquitectura del sistema operativo tradicional en la nube 
+débilmente acoplado hace que su uso sea complejo e introduce una 
+gran cantidad de trabajo redundante. Carece de percepción de la carga 
+de trabajo de la aplicación y la política no puede notificar al componente 
+subyacente de manera efectiva. Por lo tanto, la arquitectura debe 
+considerar la integración vertical de SO para reducir los niveles de 
+abstracción. Se pueden poner más puntos de percepción en el sistema 
+operativo que pueden considerar las políticas de programación en el 
+entorno distribuido y en la nube. Esto puede ayudar a construir un 
+marco de gestión unificado y plano para la plataforma de computación 
+en la nube. Dicha arquitectura se beneficia de la convergencia de 
+funciones de cada componente, la optimización basada en la 
+percepción de la carga de trabajo y la evolución ordenada.
+
+
+
+
+
+
+
+Como conclusión, el sistema operativo en la nube debe integrar 
+verticalmente el sistema operativo de un solo nodo y el middleware 
+de red para la percepción de la carga de trabajo de la aplicación. En la 
+capa inferior, la tecnología de virtualización y los contenedores se 
+pueden utilizar para admitir procesadores multinúcleo y heterogéneos. 
+Además, el desacoplamiento del desarrollo de aplicaciones y el 
+hardware debe admitirse como una caja de arena de alta eficiencia
+
+Las tecnologías de micronúcleo se pueden utilizar para mejorar el 
+aislamiento de los contenedores y la flexibilidad del sistema operativo 
+de un solo nodo. En la capa superior, el marco de gestión de recursos 
+unificado puede lograr los objetivos de implementación de trabajos 
+mixtos, optimización de la programación global y percepción de la 
+carga de trabajo de la aplicación[96-99]. El mashup de servicios se 
+puede implementar mediante la administración de paquetes de 
+aplicaciones. Para cada etapa de la evolución del sistema operativo 
+en la nube, se introducen nuevas API. Con las nuevas API y su 
+estandarización, las nuevas aplicaciones pueden impulsar la siguiente 
+etapa de la evolución de la arquitectura del sistema operativo, 
+ampliando la adopción de tecnologías en la nube.
+
+
+
+6.2 Arquitectura del sistema operativo en la nube
+
+Como referencia, diseñamos un sistema operativo en la nube que 
+implementa las API mencionadas anteriormente bajo el patrocinio del Programa 
+Nacional de Investigación y Desarrollo Clave de China. La arquitectura de nuestro 
+sistema operativo en la nube se muestra en
+El sistema operativo consta de varias capas, a saber, recursos físicos, núcleo 
+del sistema operativo, servicios del sistema, soporte del ecosistema y aplicaciones. 
+La capa de recursos físicos proporciona varios tipos de recursos, incluidos CPU, 
+memoria, almacenamiento, red, etc. El kernel del sistema operativo, que se ubica 
+entre la capa de recursos físicos y la capa de servicios del sistema, cumple la 
+tarea de abstracción de recursos y provisión de servicios. La capa de servicios del 
+sistema proporciona dichos servicios y las API correspondientes, como servicios 
+de red, computación en memoria a gran escala, almacenamiento de datos, 
+computación elástica, etc., en función de las API enviadas por el kernel del sistema 
+operativo. Además de los servicios del sistema, hay otras instalaciones (p. ej., 
+administración de cuentas, autorización de usuarios, facturación, servicios de 
+contenedores, orquestación de recursos y depósito de VM/contenedores) que son 
+necesarias para construir un ecosistema. Estas instalaciones también proporcionan 
+sus propias API. La capa más superior es la capa de aplicaciones que ofrece 
+capacidades tales como procesamiento de big data, computación científica, 
+computación gráfica, aprendizaje profundo, etc. Tenga en cuenta que la aplicación 
+aquí se llama desde la perspectiva del sistema operativo y es posible que no 
+involucre la lógica comercial.
+
+
+5 Metodología de abstracción de la API de Cloud OS Pag 234
+Según el estudio anterior, las API son fundamentales para 
+impulsar la evolución del futuro sistema operativo en la nube. La 
+abstracción de API será el primer paso para implementar cualquier 
+sistema operativo en la nube y también es la base para crear 
+aplicaciones en la nube. Hay algunos principios para hacer 
+abstracción de API en la nube.
+
+
+Los sistemas operativos Cloud Computing son un tipo de software ligero que almacena datos y puede acceder a aplicaciones basadas en la web desde un servidor remoto. Se trata de sistemas operativos diseñados para administrar la operación, ejecución y proceso de máquinas virtuales, servidores virtuales e infraestructuras que se ejecutan a distancia.
+
+Los sistemas operativos Cloud Computing permiten a los usuarios acceder al servicio con aplicaciones preinstaladas a través de la navegación web. En ellos se suelen incluir todo tipo de aplicaciones para que se pueda trabajar directamente desde cualquier parte y en cualquier momento.
+
+Y es que, la tecnología de Cloud Computing está en alza. Se trata de una disciplina que se centra en el desarrollo de aplicaciones y sistemas que nos facilitan la vida personal y laboral. Un campo en el que todavía queda mucho por experimentar y para el que hacen falta profesionales especializados.
+
+
+¿Qué son los sistemas operativos Cloud Computing?
+Como ya hemos explicado al comienzo de este artículo, los sistemas operativos Cloud Computing son programas diseñados para operar dentro de entornos de virtualización y computación en la nube.
+
+Un sistema operativo en la nube gestiona el funcionamiento, la ejecución y los procesos de las máquinas virtuales, los servidores virtuales, así como la ejecución remota de todo tipo de infraestructuras virtuales.
+
+Los sistemas operativos Cloud Computing también se suelen denominar sistemas operativos virtuales
+
+Los sistemas operativos Cloud Computing gestionan principalmente el funcionamiento de una o más máquinas virtuales dentro de un entorno virtualizado. Según el entorno y los servicios en la nube que se utilicen, su funcionalidad es variable.
+
+Vamos a ver esto con un ejemplo, como puede ser Windows Azure o Google Chrome OS. Este tipo de sistemas operativos Cloud Computing proporcionan a los usuarios finales aplicaciones y servicios preinstalados, a los que se accede a través de un navegador de Internet. Además, se encuentran entre los ejemplos más populares de sistemas operativos que operan en la nube.
+
+
+Ejemplos de sistemas operativos Cloud Computing
+Arrancar cualquiera de los sistemas operativos Cloud Computing no lleva más que unos segundos. Cualquier usuario puede emplear este tipo de software para mejorar o agilizar los procesos de trabajo. Para operar desde puntos de acceso o equipos más ligeros y que no soportan tanta carga como para ejecutar el sistema y las aplicaciones que el usuario necesite.
+
+Vamos a ver ahora algunos ejemplos de sistemas operativos Cloud Computing. Algunos de ellos seguro que te suenan, otros menos, pero todos son punteros en el uso de la tecnología de la nube para mejorar procesos y facilitar la vida de sus usuarios.
+
+Microsoft Azure
+Microsoft Azure es un servicio de cloud computing creado por el el gigante informático para construir, probar, desplegar y administrar todo tipo de aplicaciones y otros servicios desde un centro de datos.
+
+Se trata de un sistema operativo en la nube especializado que se encarga de manejar todos los recursos a los que pueden acceder los usuarios.
+
+Además, cuenta con un sistema de copias de seguridad que permite resguardar los datos ante posibles problemas en el sistema.
+
+Google Chrome OS
+Chrome OS es un sistema operativo basado en la nube desarrollado por Goole y presentado en 2011. Inicialmente fue orientado a miniportátiles y contó con la colaboración de marcas como Samsung o Acer.
+
+Se basa en el proyecto de código abierto Chromium OS y tiene un reproductor de medios y un gestor de archivos integrado.
+
+Además, cuenta con acceso a las app nativas y al escritorio de forma remota. Se trata de uno de los sistemas operativos Cloud Computing pioneros.
+
+Amazon AWS
+Otra empresa que no podía faltar en el cloud computing es Amazon. De hecho, AWS se considera uno de los servicios pioneros en cloud computing.
+
+Amazon AWS (Web Services) se puede incluir como sistema operativo que se basa en la nube ya que se trata de una colección de servicios que emplean esta tecnología para ofrecer acceso a distintos tipos de aplicaciones en remoto.
+
+Netvibes
+
