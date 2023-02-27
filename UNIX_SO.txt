@@ -1,0 +1,57 @@
+UNIX
+Unix ha evolucionado durante las ultimas 5 decadas, moldeando sistemas operativos modernos, tecnologias de software grandes, complejos y de larga duracion. 
+
+Como sistema 
+operativo, ha dejado una huella innegable en la historia de la informática, al 
+mismo tiempo que ha influido enormemente en el estado actual de la 
+ingeniería de software, redes y hardware.
+
+
+1. UNIX es una marca registrada de The Open Group.
+
+2.1 Evolución del software
+
+En 1970 se hablá por priemra vez de UNIX, UNIX viene siendo la base de todos los SO que venimos conociendo actualmente. 
+Se crea el lenguaje C para escribir otra version de UNIX en 1972.
+que lo convierte en un sistema facilmente portable a otras arquitecturas.
+
+Practicamente Unix está en todos los sistemas operativos
+
+
+Es un sistema operativo portable, multiusuario 
+
+
+En q975 el S0 lanzó la version 6 que incluia una interfaz grafica, mas amigable con el usuario.
+
+
+Unix has evolved over the last 5 decades, shaping modern operating systems, large, complex and long-lived software technologies.
+
+
+As an operating system, it has left an undeniable mark on the history of computing, while at the same time having greatly influenced the current state of software, network, and hardware engineering.
+
+
+
+https://issuu.com/reynaldogil/docs/arquitectura_de_los_so_reynaldo_gil
+
+
+
+Es un sistema operativo de tiempo compartido, controla los recursos de una computadora  y los asigna entre los usuarios.
+
+It is a timesharing operating system, it controls the resources of a computer and allocates them among the users.
+
+
+https://disenowebakus.net/principales-variantes-de-unix.php
+
+
+La estructura de UNIX se amolda a un típico modelo de capas, de forma que cada capa unicamente puede comunicarse con las capas que se hallan en los niveles inmediatamente inferior y superior.
+The UNIX structure conforms to a typical layer model, so that each layer can only communicate with the layers that are immediately below and above it.
+
+
+https://disenowebakus.net/principales-variantes-de-unix.php
+
+
+https://dokumen.tips/documents/requisitos-minimos-para-instalar-unix.html?page=1
+
+
+https://www.compuhoy.com/cuanto-cuesta-unix/
+
