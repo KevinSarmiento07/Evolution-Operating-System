@@ -4,7 +4,7 @@ Evolution Cloud:
 - cloud ecosystem evolution
 
 
-Ejecuta aplicaciones en la nube es diferente a ejecutar aplicaciones en una sola maquina, para cada so de una sola maquina se utulizará un programador de tareas para adminsistrar los procesos en el sistema. pag226
+Ejecutar aplicaciones en la nube es diferente a ejecutar aplicaciones en una sola maquina, para cada so de una sola maquina se utulizará un programador de tareas para adminsistrar los procesos en el sistema. pag226
 Amazon y Google, fuerom los pioneros de los SO en la nube, les sigue Microsoft
 
 
@@ -195,3 +195,16 @@ Amazon AWS (Web Services) se puede incluir como sistema operativo que se basa en
 
 Netvibes
 
+
+
+The cloud operating system (cloud OS) is used for managing the cloud resources such that they can be used
+effectively and efficiently. And also it is the duty of cloud OS to provide convenient interface for users and applications
+
+
+https://www.areatecnologia.com/informatica/sistemas-operativos-en-la-nube.html#C%C3%B3mo_Funciona_un_SO_en_la_Nube_
+
+
+https://www.intel.la/content/www/xl/es/cloud-computing/cloud-architecture.html#:~:text=Preguntas%20Frecuentes-,Qu%C3%A9%20es%20la%20arquitectura%20de%20la%20nube%3F,servicios)%20que%20respaldan%20su%20nube.
+}
+
+https://www.youtube.com/watch?v=zl1VgAv5XXI
